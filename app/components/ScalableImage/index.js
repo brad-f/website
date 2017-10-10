@@ -9,7 +9,8 @@ const styles = {
     minWidth: '150px',
     minHeight: '150px',
     maxWidth: '90%',
-    height: 'auto'
+    height: 'auto',
+    margin: 'auto'
   }
 };
 

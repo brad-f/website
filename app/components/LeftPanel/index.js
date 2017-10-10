@@ -7,14 +7,13 @@ const styles = assign(
   {
     leftPanel: {
       gridRow: '2',
-      gridColumn: '1 / 2'
+      gridColumn: '1 / 3'
     }
   },
   screens.medium({
     leftPanel: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center'
+      gridRow: '2',
+      gridColumn: '1 / 2'
     }
   })
 );
