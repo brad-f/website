@@ -39,6 +39,10 @@ module.exports = {
       loader: 'file-loader',
       options: { name: '[name]-[hash].[ext]' }
     }, {
+      test: /favicon.ico$/i,
+      loader: 'file-loader',
+      options: { name: 'favicon.ico' }
+    }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract({
         fallback: 'style-loader',
