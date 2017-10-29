@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gsutil rsync -d build gs://bradfitzwater.com/
