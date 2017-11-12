@@ -9,7 +9,7 @@ const styles = {
   page: {
     display: 'grid',
     gridGap: '1rem',
-    width: '80%',
+    width: '90%',
     marginLeft: 'auto',
     marginRight: 'auto',
     fontFamily: '\'Roboto\', sans-serif'

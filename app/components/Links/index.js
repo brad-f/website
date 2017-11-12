@@ -48,7 +48,9 @@ const styles = assign(
     linkList: {
       paddingLeft: '0',
       listStyle: 'none',
-      fontSize: '1.1rem'
+      fontSize: '1.5rem',
+      lineHeight: '2rem',
+      whiteSpace: 'nowrap'
     },
     link: {
       paddingLeft: '0.5rem'
@@ -61,7 +63,7 @@ const styles = assign(
   }),
   screens.large({
     linklist: {
-      fontsize: '1.7rem'
+      fontSize: '1.7rem'
     }
   })
 );

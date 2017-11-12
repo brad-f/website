@@ -6,8 +6,8 @@ const styles = {
     display: 'block',
     overflow: 'hidden',
     borderRadius: '50%',
-    minWidth: '150px',
-    minHeight: '150px',
+    minWidth: '250px',
+    minHeight: '250px',
     maxWidth: '90%',
     height: 'auto',
     margin: 'auto'
