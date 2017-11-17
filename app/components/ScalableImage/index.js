@@ -1,4 +1,5 @@
 const React = require('react');
+const identity = require('lodash/identity');
 const injectSheet = require('react-jss').default;
 
 const styles = {
@@ -20,9 +21,14 @@ const styles = {
   }
 };
 
-const ScalableImage = ({ classes, image, alt }) => (
+const ScalableImage = ({ classes, image, alt, onClick }) => (
   <div className={classes.wrapper}>
-    <img className={classes.image} alt={alt} src={image} />
+    <img
+      className={classes.image}
+      alt={alt}
+      src={image}
+      onClick={onClick || identity}
+    />
   </div>
 );
 
