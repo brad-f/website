@@ -1,4 +1,6 @@
 const React = require('react');
+const identity = require('lodash/identity')
+const { withTheme } = require('theming');
 
 const Page = require('../Page');
 const LeftPanel = require('../LeftPanel');
@@ -10,14 +12,18 @@ const Links = require('../Links');
 
 const meImage = require('../../assets/me.jpg');
 
-module.exports = () => (
-  <Page>
-    <LeftPanel>
-      <ScalableImage alt="me" image={meImage} />
-    </LeftPanel>
-    <RightPanel>
-      <Bio />
-      <Links />
-    </RightPanel>
-  </Page>
+const Main = (props) => (
+  <div style={ props.theme }>
+    <Page>
+      <LeftPanel>
+        <ScalableImage alt="me" image={meImage} onClick={props.onImageClick} />
+      </LeftPanel>
+      <RightPanel>
+        <Bio />
+        <Links />
+      </RightPanel>
+    </Page>
+  </div>
 );
+
+module.exports = withTheme(Main);
