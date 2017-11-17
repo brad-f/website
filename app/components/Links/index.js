@@ -53,7 +53,9 @@ const styles = assign(
       whiteSpace: 'nowrap'
     },
     link: {
-      paddingLeft: '0.5rem'
+      paddingLeft: '0.5rem',
+      textDecoration: 'none',
+      color: '#008b8b'
     }
   },
   screens.medium({
