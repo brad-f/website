@@ -8,23 +8,16 @@ import './index.css'
 
 const styles = {
   page: {
-    display: 'grid',
-    gridGap: '1rem',
-    width: '90%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    fontFamily: '\'Roboto\', sans-serif'
-  },
-  pageWrapper: {
     margin: '0 auto',
-    maxWidth: 960,
+    maxWidth: '100%',
     padding: '0px 1.0875rem 1.45rem',
     paddingTop: 0,
+    fontFamily: '\'Roboto\', sans-serif'
   }
 };
 
 const Layout = ({ children, data, classes }) => (
-  <div className={classes.page}>
+  <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -33,7 +26,7 @@ const Layout = ({ children, data, classes }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.headerText} />
-    <div className={classes.pageWrapper}>
+    <div className={classes.page}>
       {children()}
     </div>
   </div>
