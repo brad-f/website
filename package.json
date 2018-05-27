@@ -1,0 +1,11 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:brad-f/website.git",
+  "author": "Brad Fitzwater <brad.fitzwater@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby-cli": "^1.1.52"
+  }
+}
