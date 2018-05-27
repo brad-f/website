@@ -38,6 +38,18 @@ const styles = {
   bio: {
     fontSize: '1.7rem',
     lineHeight: '1.8rem'
+  },
+  links: {
+    paddingLeft: '0',
+    listStyle: 'none',
+    fontSize: '1.7rem',
+    lineHeight: '2rem',
+    whiteSpace: 'nowrap'
+  },
+  link: {
+    paddingLeft: '0.5rem',
+    textDecoration: 'none',
+    color: '#008b8b'
   }
 }
 
@@ -61,6 +73,28 @@ const IndexPage = ({ classes }) => (
         <p>I am a husband and father of twins.</p>
         <p>This site will, most likely, always be a work in progress.</p>
       </div>
+      <ul className={classes.links}>
+        <li>
+          <a
+            className={classes.link}
+            href='https://github.com/brad-f'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            https://github.com/brad-f
+          </a>
+        </li>
+        <li>
+          <a
+            className={classes.link}
+            href='https://twitter.com/bradfitzwater'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+           https://twitter.com/bradfitzwater
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 )
