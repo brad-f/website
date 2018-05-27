@@ -6,6 +6,7 @@
   "author": "Brad Fitzwater <brad.fitzwater@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "gatsby-cli": "^1.1.52"
+    "gatsby-cli": "^1.1.52",
+    "gatsby-plugin-jss": "^1.5.14"
   }
 }

@@ -3,5 +3,8 @@ module.exports = {
     title: 'bradfitzwater.com',
     headerText: 'brad fitzwater\'s experiments',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: [
+    'gatsby-plugin-jss',
+    'gatsby-plugin-react-helmet',
+  ],
 }
