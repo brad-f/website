@@ -17,7 +17,7 @@ const styles = {
 };
 
 const Layout = ({ children, data, classes }) => (
-  <div>
+  <div className={classes.page}>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -26,13 +26,13 @@ const Layout = ({ children, data, classes }) => (
       ]}
       link={[
         {
-          href: 'https://fonts.googleapis.com/css?family=Roboto<Paste>',
+          href: 'https://fonts.googleapis.com/css?family=Roboto',
           rel: 'stylesheet'
         }
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.headerText} />
-    <div className={classes.page}>
+    <div>
       {children()}
     </div>
   </div>
