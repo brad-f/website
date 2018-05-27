@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 
 import Header from '../components/header'
-import './index.css'
+import 'normalize.css'
 
 const styles = {
   page: {
@@ -23,6 +23,12 @@ const Layout = ({ children, data, classes }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+      ]}
+      link={[
+        {
+          href: 'https://fonts.googleapis.com/css?family=Roboto<Paste>',
+          rel: 'stylesheet'
+        }
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.headerText} />

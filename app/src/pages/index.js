@@ -3,6 +3,8 @@ import injectSheet from 'react-jss';
 import Link from 'gatsby-link'
 import image from './me.jpg'
 
+import 'font-awesome/css/font-awesome.css'
+
 const styles = {
   grid: {
     display: 'grid',
@@ -75,6 +77,7 @@ const IndexPage = ({ classes }) => (
       </div>
       <ul className={classes.links}>
         <li>
+          <i className={`fa fa-github`} aria-hidden="true" />
           <a
             className={classes.link}
             href='https://github.com/brad-f'
@@ -85,6 +88,7 @@ const IndexPage = ({ classes }) => (
           </a>
         </li>
         <li>
+          <i className={`fa fa-twitter`} aria-hidden="true" />
           <a
             className={classes.link}
             href='https://twitter.com/bradfitzwater'
