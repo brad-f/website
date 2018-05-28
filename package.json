@@ -10,5 +10,8 @@
     "gatsby-cli": "^1.1.52",
     "gatsby-plugin-jss": "^1.5.14",
     "normalize.css": "^8.0.0"
+  },
+  "scripts": {
+    "develop": "gatsby develop"
   }
 }
