@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ./app
+gatsby build
+gsutil rsync -d -r public gs://bradfitzwater.com/
