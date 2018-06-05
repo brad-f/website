@@ -1,0 +1,31 @@
+.topRow {
+  text-align: center;
+}
+
+.topRow a {
+  text-decoration: none;
+  color: black;
+}
+
+.topRow .muted {
+  color: #636c72;
+}
+
+.topRow h1 {
+  font-size: 3.0rem;
+  line-height: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  .topRow h1 {
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .topRow h1 {
+    font-size: 6.0rem;
+    line-height: 6.2rem;
+  }
+}
