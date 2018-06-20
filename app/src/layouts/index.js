@@ -1,23 +1,13 @@
 import React from 'react'
-import injectSheet from 'react-jss';
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 
-import Header from '../components/header'
 import 'normalize.css'
+import Header from '../components/header'
+import styles from './index.module.css'
 
-const styles = {
-  page: {
-    margin: '0 auto',
-    maxWidth: '100%',
-    padding: '0px 1.0875rem 1.45rem',
-    paddingTop: 0,
-    fontFamily: '\'Roboto\', sans-serif'
-  }
-};
-
-const Layout = ({ children, data, classes }) => (
-  <div className={classes.page}>
+const Layout = ({ children, data }) => (
+  <div className={styles.page}>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -42,7 +32,7 @@ Layout.propTypes = {
   children: PropTypes.func,
 }
 
-export default injectSheet(styles)(Layout)
+export default Layout
 
 export const query = graphql`
   query SiteTitleQuery {
