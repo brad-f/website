@@ -13,6 +13,7 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+        { name: 'theme-color', content: '#000000' }
       ]}
       link={[
         {
