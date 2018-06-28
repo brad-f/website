@@ -64,9 +64,19 @@
 .links {
   padding-left: 0;
   list-style: none;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
   white-space: nowrap;
+}
+
+@media (min-width: 576px) {
+  .links {
+    padding-left: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: 992px) {
@@ -82,5 +92,6 @@
 .link {
   padding-left: 0.5rem;
   text-decoration: none;
-  color: #008b8b
+  color: #008b8b;
 }
+
