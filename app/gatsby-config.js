@@ -1,10 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'bradfitzwater.com',
-    headerText: 'brad fitzwater\'s experiments',
+    title: 'bradfitzwater.com'
   },
   plugins: [
-    'gatsby-plugin-jss',
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet'
   ],
 }
