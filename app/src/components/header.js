@@ -7,7 +7,7 @@ const Header = () => (
     <h1>
       <Link to="/">
         brad fitzwater&apos;s
-        <span className={styles.muted}> experiments</span>
+        <span className={styles.muted}> stuff</span>
       </Link>
     </h1>
   </div>
