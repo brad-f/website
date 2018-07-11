@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 
 import 'normalize.css'
-import Header from '../components/header'
 import styles from './index.module.css'
 
 const Layout = ({ children, data }) => (
@@ -22,7 +21,6 @@ const Layout = ({ children, data }) => (
         }
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.headerText} />
     <div>
       {children()}
     </div>
@@ -40,7 +38,6 @@ export const query = graphql`
     site {
       siteMetadata {
         title
-        headerText
       }
     }
   }
