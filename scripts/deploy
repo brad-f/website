@@ -3,6 +3,4 @@
 cd ./app
 rm -r public
 gatsby build
-gsutil rsync -d -r public gs://bradfitzwater.com/
-gsutil setmeta -h "Content-Type:text/html" \
-  -h "Cache-Control:private, max-age=0, no-transform" gs://bradfitzwater.com/*.html
+aws s3 sync public s3://bradfitzwater.com/
